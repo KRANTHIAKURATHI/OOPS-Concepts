@@ -1,0 +1,30 @@
+//Implementation Of Abstraction!(Code)
+
+abstract class Bulb{
+
+  //initilize your methods or variables here with abstract key word
+  abstract void Switch_on();
+  abstract void Switch_off();
+}
+
+class Switch extends Bulb{
+  //class implementing the abstract methods
+
+  @Override
+  void Switch_on(){
+      System.out.println("Bulb is turned on!");
+  }
+
+  @override
+  void Switch_off(){
+    System.out.println("Bulb is turned off!");
+  }
+}
+
+public class StackApp{
+  public static void main(String[] args){
+      Switch switch_bulb = new Switch();
+      switch_bulb.Switch_on();
+      switch_bulb.Switch_off();
+  }
+}

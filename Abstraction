@@ -12,12 +12,12 @@ class Switch extends Bulb{
 
   @Override
   void Switch_on(){
-      System.out.println("Bulb is turned on!");
+      System.out.println("The Bulb is turned on!");
   }
 
   @override
   void Switch_off(){
-    System.out.println("Bulb is turned off!");
+    System.out.println("The Bulb is turned off!");
   }
 }
 
@@ -28,3 +28,6 @@ public class StackApp{
       switch_bulb.Switch_off();
   }
 }
+//Output:
+//The Bulb is turned on!
+//The Bulb is turned off!
